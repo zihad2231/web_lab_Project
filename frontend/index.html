@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern Dashboard for Web Lab Project">
+    <title>Web Lab | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Background decorative elements -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        
+        <header class="glass-panel">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <h1>Web Lab</h1>
+            </div>
+            <nav>
+                <a href="#" class="nav-link active">Dashboard</a>
+                <a href="#" class="nav-link">Settings</a>
+            </nav>
+        </header>
+
+        <main class="glass-panel main-content">
+            <section class="hero-section">
+                <h2>Welcome to the Future</h2>
+                <p>This is a stunning, premium frontend interface built with Vanilla web technologies.</p>
+                <button id="testApiBtn" class="primary-btn">
+                    <span>Test API Connection</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </section>
+
+            <section class="status-section">
+                <div class="status-card">
+                    <h3>Server Status</h3>
+                    <div id="apiStatus" class="status-indicator waiting">
+                        <div class="pulse"></div>
+                        <span id="statusText">Waiting for connection...</span>
+                    </div>
+                    <p id="apiResponse" class="response-text"></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
